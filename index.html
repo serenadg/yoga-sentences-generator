@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -13,16 +15,17 @@
     <h1>Yoga teacher sentences generator</h1><img src="images/yoga-logo2.png" alt=""></a>
     </header>
     <div class="form-container">
-    <form>
-      <input  type="text" id="instructions" placeholder="Type a body part"/>
+    <form class="sentence-form">
+      <input  type="text" autofocus required autocomplete="off" id="instructions" placeholder="Type a body part"/>
       <input type="submit" value="Generate" id="button">
       </div>
-      <div class="joke">Imagine your sit bones are two old friends having a quiet conversation with the floor.
+      <div class="joke">
 </div>
 
     </form>
     <footer>This project was coded by <a href="https://github.com/serenadg">Serena Di Girolamo</a> and is hosted on <a href="https://yogateachersentences.netlify.app/">Netlify</a> and is open-sourced on <a href="https://github.com/serenadg/yoga-sentences-generator">GitHub</a></footer>
-    <script src="src/index.js"></script>
+    
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
