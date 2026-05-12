@@ -25,6 +25,10 @@ let instructions = document.querySelector("#instructions")
 let prompt = `Make a funny short sentence about ${instructions.value} as if you were a Yoga teacher saying to use that body part. Sign the joke as it was a quote with a made up name of a Yoga Teacher. Sign on a new line`;
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+let jokeElement = document.querySelector(".joke");
+jokeElement.classList.remove("hidden");
+jokeElement.innerHTML = `<div class="blink">⏳ Generating a Sentence about "${instructions.value}"...</div>`
+
 axios.get(apiUrl).then(displaySentence);
 console.log(`${prompt}`)
 
