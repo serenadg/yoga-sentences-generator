@@ -30,6 +30,4 @@ jokeElement.classList.remove("hidden");
 jokeElement.innerHTML = `<div class="blink">⏳ Generating a Sentence about "${instructions.value}"...</div>`
 
 axios.get(apiUrl).then(displaySentence);
-console.log(`${prompt}`)
-
 }
